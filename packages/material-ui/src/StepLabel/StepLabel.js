@@ -20,10 +20,11 @@ export const styles = (theme) => ({
   /* Styles applied to the root element if `orientation="horizontal"`. */
   horizontal: {},
   /* Styles applied to the root element if `orientation="vertical"`. */
-  vertical: {},
+  vertical: {
+    textAlign: 'left',
+  },
   /* Styles applied to the `Typography` component which wraps `children`. */
   label: {
-    color: theme.palette.text.secondary,
     '&$active': {
       color: theme.palette.text.primary,
       fontWeight: 500,
@@ -61,6 +62,7 @@ export const styles = (theme) => ({
   alternativeLabel: {},
   /* Styles applied to the container element which wraps `Typography` and `optional`. */
   labelContainer: {
+    color: theme.palette.text.secondary,
     width: '100%',
   },
 });
